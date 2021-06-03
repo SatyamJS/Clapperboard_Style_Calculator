@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Handy Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="calculatorFrame">
+            <div contenteditable="true" class="calcScreen">
+            </div>
+            <div class="calcButtons">
+                <table>
+                    <tr>
+                        <td title="Clear All" id="clear">C</td>
+                        <td title="Exponentation" onclick="getInput(event)">^</td>
+                        <td id="del">del</td>
+                        <td title="Divide" onclick="getInput(event)">/</td>
+                    </tr>
+                    <tr>
+                        <td onclick="getInput(event)">7</td>
+                        <td onclick="getInput(event)">8</td>
+                        <td onclick="getInput(event)">9</td>
+                        <td title="Multiply" onclick="getInput(event)">x</td>
+                    </tr>
+                    <tr>
+                        <td onclick="getInput(event)">4</td>
+                        <td onclick="getInput(event)">5</td>
+                        <td onclick="getInput(event)">6</td>
+                        <td title="Subtract" onclick="getInput(event)"><strong>-</strong></td>
+                    </tr>
+                    <tr>
+                        <td onclick="getInput(event)">1</td>
+                        <td onclick="getInput(event)">2</td>
+                        <td onclick="getInput(event)">3</td>
+                        <td title="Addition" onclick="getInput(event)"> + </td>
+                    </tr>
+                    <tr>
+                        <td onclick="getInput(event)">00</td>
+                        <td onclick="getInput(event)">0</td>
+                        <td title="Decimal" onclick="getInput(event)">.</td>
+                        <td id='equate'> = </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
